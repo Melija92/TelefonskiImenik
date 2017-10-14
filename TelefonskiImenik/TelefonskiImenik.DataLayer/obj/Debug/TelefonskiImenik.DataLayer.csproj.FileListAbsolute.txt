@@ -1,0 +1,12 @@
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\bin\Debug\TelefonskiImenik.DataLayer.dll.config
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\bin\Debug\TelefonskiImenik.DataLayer.dll
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\bin\Debug\TelefonskiImenik.DataLayer.pdb
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\bin\Debug\EntityFramework.dll
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\bin\Debug\TelefonskiImenik.Model.dll
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\bin\Debug\TelefonskiImenik.Model.pdb
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\bin\Debug\EntityFramework.xml
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\obj\Debug\TelefonskiImenik.DataLayer.csprojResolveAssemblyReference.cache
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\obj\Debug\TelefonskiImenik.DataLayer.dll
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.DataLayer\obj\Debug\TelefonskiImenik.DataLayer.pdb

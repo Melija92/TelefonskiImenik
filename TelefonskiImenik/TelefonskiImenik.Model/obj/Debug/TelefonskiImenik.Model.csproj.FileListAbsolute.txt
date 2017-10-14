@@ -1,0 +1,5 @@
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.Model\bin\Debug\TelefonskiImenik.Model.dll
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.Model\bin\Debug\TelefonskiImenik.Model.pdb
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.Model\obj\Debug\TelefonskiImenik.Model.csprojResolveAssemblyReference.cache
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.Model\obj\Debug\TelefonskiImenik.Model.dll
+D:\Lokalno programiranje\Zadatak za Junior Developere\TelefonskiImenik\TelefonskiImenik.Model\obj\Debug\TelefonskiImenik.Model.pdb
