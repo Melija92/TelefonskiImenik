@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Broj.cs" />
     <Compile Include="Grad.cs" />
+    <Compile Include="IStatusi.cs" />
     <Compile Include="Kontakt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

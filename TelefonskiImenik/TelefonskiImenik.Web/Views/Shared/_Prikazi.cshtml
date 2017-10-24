@@ -1,0 +1,40 @@
+﻿<h2>@ViewBag.Title</h2>
+
+<div>
+    <div>
+        <label>Ime:</label>
+        <span data-bind="text: Ime"></span>
+    </div>
+    <div>
+        <label>Prezime:</label>
+        <span data-bind="text: Prezime"></span>
+    </div>
+    <div>
+        <label>Opis:</label>
+        <span data-bind="text: Opis"></span>
+    </div>
+    <div>
+        <label>Grad:</label>
+        <span data-bind="text: NazivGrada"></span>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <tr>
+        <th>Broj</th>
+        <th>TipBroja</th>
+        <th>Opis</th>
+    </tr>
+    <tbody data-bind="foreach: Brojevi">
+        <tr>
+            <td class="form-group"><span class="form-control input-sm" data-bind="text: SadrzajBroja" ></span></td>
+            <td class="form-group"><span class="form-control input-sm" data-bind="text: TipBroja"></span></td>
+            <td class="form-group"><span class="form-control input-sm" data-bind="text: Opis"></span></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

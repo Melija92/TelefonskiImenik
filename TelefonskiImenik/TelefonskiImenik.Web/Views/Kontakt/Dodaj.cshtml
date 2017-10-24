@@ -1,0 +1,75 @@
+﻿@using TelefonskiImenik.Web.ViewModels
+@model KontaktViewModel
+@using System.Activities.Expressions
+@using System.Web.Script.Serialization
+
+@{
+    ViewBag.Title = "Dodavanje kontakta";
+}
+
+@{ string data = new JavaScriptSerializer().Serialize(Model);}
+
+@section scripts{
+    <script src="~/Scripts/knockout-3.4.2.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <script src="~/Scripts/kontaktviewmodel.js"></script>
+    <script type="text/javascript">
+        var kontaktViewModel = new KontaktViewModel(@Html.Raw(data));
+        ko.applyBindings(kontaktViewModel);
+    </script>
+}
+
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm("Spremi", "Kontakt", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <div>
+            <label>Ime:</label>
+            <input data-bind="value: Ime, event: {change: promjeneUKontaktu}" />
+        </div>
+        <div>
+            <label>Prezime:</label>
+            <input data-bind="value: Prezime, event: {change: promjeneUKontaktu}" />
+        </div>
+        <div>
+            <label>Opis:</label>
+            <input data-bind="value: Opis, event: {change: promjeneUKontaktu}" />
+        </div>
+        <div>
+            <label>Grad:</label>
+            @Html.DropDownListFor(a => a.Grad, new SelectList(Model.Grad, "GradId", "NazivGrada"),
+     "Izaberi grad", new { @class = "form-control", @data_bind = "value: GradId, event: {change: promjeneUKontaktu}" })
+        </div>
+        <div>
+            <input type="file" id="slikaKontakta" name="slikaKontakta" />
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <tr>
+            <th>Broj</th>
+            <th>TipBroja</th>
+            <th>Opis</th>
+            <th><button class="btn btn-info btn-xs" data-bind="click: dodavanjeBroja">Add</button></th>
+        </tr>
+        <tbody data-bind="foreach: Brojevi">
+            <tr>
+                <td class="form-group"><input class="form-control input-sm" data-bind="value: SadrzajBroja, event: {change: promjeneUBroju}" /></td>
+                <td class="form-group"><input class="form-control input-sm" data-bind="value: TipBroja, event: {change: promjeneUBroju}" /></td>
+                <td class="form-group"><input class="form-control input-sm" data-bind="value: Opis, event: {change: promjeneUBroju}" /></td>
+                <td class="form-group"><button class="btn btn-danger btn-xs" data-bind="click: $parent.izbrisiBroj">Izbriši</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><button data-bind="click: spremi">Spremi</button></p>
+}
+
+
+
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

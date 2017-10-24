@@ -7,7 +7,7 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Dodaj novi kontakt", "Dodaj")
 </p>
 <table class="table">
     <tr>
@@ -16,6 +16,12 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Prezime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Opis)
+        </th>
+        <th>
+            Grad
         </th>
         <th></th>
     </tr>
@@ -30,9 +36,15 @@
                 @Html.DisplayFor(modelItem => item.Prezime)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.KontaktId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.KontaktId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.KontaktId })
+                @Html.DisplayFor(modelItem => item.Opis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grad.NazivGrada)
+            </td>
+            <td>
+                @Html.ActionLink("Uredi", "Uredi", new { id = item.KontaktId }) |
+                @Html.ActionLink("Detalji", "Detalji", new { id = item.KontaktId }) |
+                @Html.ActionLink("Izbriši", "Izbrisi", new { id = item.KontaktId })
             </td>
         </tr>
     }

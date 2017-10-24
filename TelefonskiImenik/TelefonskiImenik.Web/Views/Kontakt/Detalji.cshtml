@@ -1,0 +1,21 @@
+﻿@model TelefonskiImenik.Web.ViewModels.KontaktViewModel
+@using System.Activities.Expressions
+@using System.Web.Script.Serialization
+
+@{
+    ViewBag.Title = "Detalji kontakta";
+}
+
+@{ string data = new JavaScriptSerializer().Serialize(Model);}
+
+@section scripts{
+    <script src="~/Scripts/knockout-3.4.2.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <script src="~/Scripts/kontaktviewmodel.js"></script>
+    <script type="text/javascript">
+        var kontaktViewModel = new KontaktViewModel(@Html.Raw(data));
+        ko.applyBindings(kontaktViewModel);
+    </script>
+}
+
+@Html.Partial("_Prikazi")
